@@ -1,6 +1,37 @@
 div {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  display: block;
+  height: 125px;
+  width: 125px;
+}
+
+img:hover,
+img:focus {
+  animation-name: animateLogo;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 2;
+}
+
+@keyframes animateLogo {
+  0% {
+    filter: opacity(0.25);
+    transform: scale(1);
+  }
+
+  50% {
+    filter: opacity(0.5);
+    transform: scale(0.75);
+  }
+
+  100% {
+    filter: opacity(0.75);
+    transform: scale(1);
+  }
 }
